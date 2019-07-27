@@ -2,3 +2,6 @@ server:
   servlet:
     context-path: /springapp
   port: 8090
+spring:
+  main:
+    banner-mode: "off"
