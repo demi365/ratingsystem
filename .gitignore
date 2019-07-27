@@ -1,0 +1,3 @@
+# ignore the target folder for dev purpose
+
+/target/*
