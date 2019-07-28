@@ -31,19 +31,19 @@ public class Rating {
     private int ratingId;
 
     @ManyToOne
-    @NotNull
+    @NotNull(message = "The user id provided is either empty or null")
     @JoinColumn(name = "USER_ID")
     private User user;
 
     @ManyToOne
-    @NotNull
+    @NotNull(message = "The book id provided is either empty or null")
     @JoinColumn(name = "BOOK_ID")
     private Book book;
 
     @Column(name = "RATING")
     @NotNull(message = "Please specify a rating between 1 and 5 inclusive")
     @Min(value = 1, message = "Please enter a rating greater than 0")
-    @Max(value = 5, message = "Please enter a rating leser than 1")
+    @Max(value = 10, message = "Please enter a rating lesser than 10")
     private int rating;
 
 }

@@ -20,7 +20,7 @@ public class Book {
     @Column(name = "BOOK_ID")
     private Integer bookId;
 
-    @Column(name = "BOOK_NAME")
+    @Column(name = "BOOK_NAME", unique = true)
     @NotNull(message = "Book name field is either missing or null")
     private String bookName;
     
