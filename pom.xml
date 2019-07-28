@@ -19,11 +19,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Adding thymeleaf dependency for managing views-->
+        <!-- Replacing thymeleaf with jasper, so I can use my more familiar 
+        JSP to views, atleast while learning -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>9.0.22</version>
         </dependency>
+
 
          <!-- Adding H2 Database -->
         <dependency>
