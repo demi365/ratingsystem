@@ -1,0 +1,12 @@
+learning\spring\boot\controller\RatingController.class
+learning\spring\boot\repository\BookRepository.class
+learning\spring\boot\repository\RatingRepository.class
+learning\spring\boot\repository\UserRepository.class
+learning\spring\boot\service\RatingsService.class
+learning\spring\boot\controller\Starter.class
+learning\spring\boot\model\User.class
+learning\spring\boot\exceptions\RecordNotFoundException.class
+learning\spring\boot\model\Book.class
+learning\spring\boot\model\Rating.class
+learning\spring\boot\model\Rating$RatingBuilder.class
+learning\spring\boot\Application.class
