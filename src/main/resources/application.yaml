@@ -1,13 +1,22 @@
 server:
-  servlet:
-    context-path: /springapp
-  port: 8090
+  # servlet:
+  #   context-path: /springapp
+  # port: 8080
 spring:
   main:
     banner-mode: "off"
-  h2:
-    console:
-      enabled: "true"
+  # h2:
+  #   console:
+  #     enabled: "true"
   datasource:
-    url: jdbc:h2:file:./datasource/ratingapp
+    url: jdbc:mysql://aa1uq14goaq4f2d.cv7oqn84trff.ap-south-1.rds.amazonaws.com:3306/ebdb
+    driver-class-name: com.mysql.jdbc.Driver
     platform: h2
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    # properties:
+    #   hibernate:
+    #     dialect: org.hibernate.dialect.MySQL5InnoDBDialect

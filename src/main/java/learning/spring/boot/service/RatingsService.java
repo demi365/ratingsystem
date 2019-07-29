@@ -50,7 +50,7 @@ public class RatingsService {
             
             for(Rating r : reviews) {
 
-                if(r.getUser().getUser_id() == userId){
+                if(r.getUser().getUserId() == userId){
                     
                     r.setRating(rating);
                     ratingRepo.save(r);

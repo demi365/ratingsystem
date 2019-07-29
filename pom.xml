@@ -5,6 +5,7 @@
 
     <groupId>learning.spring.boot</groupId>
     <artifactId>learn-spring-boot</artifactId>
+    <packaging>war</packaging>
     <version>0.1.0</version>
 
     <parent>
@@ -28,10 +29,10 @@
         </dependency>
 
 
-         <!-- Adding H2 Database -->
+         <!-- Adding mSQL for AWS Database -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
         <dependency>
@@ -60,6 +61,7 @@
     </dependencies>
     
     <build>
+        <finalName>rating-system</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -19,15 +19,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
-    private Integer user_id;
+    private Integer userId;
 
     @Column(name = "first_name")
     @NotNull(message = "The first name provided is either empty or null")
-    private String first_name;
+    private String firstName;
 
     @Column(name = "last_name")
     @NotNull(message = "The last name provided is either empty or null")
-    private String last_name;
+    private String lastName;
     
     @Column(name = "email")
     @NotNull(message = "The email id provided is either empty or null")
